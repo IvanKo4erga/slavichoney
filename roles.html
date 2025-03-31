@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for role in data %}
+    <h2>Роль: {{forloop.counter}} {{role.name}}</h2>
+        {% for user in role.telegramusers_set.all %}
+        {{ user.username }}
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>

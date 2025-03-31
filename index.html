@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fetchUserData(userId){
+            fetch(`http://127.0.0.1:8000/get_user_data/?user_id=${userId}`)
+                .then(response => response.json())
+                .then(data => alert(`Username: ${data.username}\nRole: ${data.role}\nUser ID: ${data.user_id}`))
+                .catch(error => console.error('Error', error))
+        }
+    </script>
+</head>
+<body>
+    <!--{% for user in data %}
+    <h2>Пользователь {{forloop.counter}}</h2>
+    Роль: {{ user.role.name }}
+    {% if user.username == 'dog' %}
+    <b style="color:red"> {{user.username}} </b>
+    {% else %}
+    <b style="color:green"> {{user.username}} </b>
+    {% endif %}
+    {% endfor %}-->
+    
+    <button onclick="fetchUserData('435345')">Получить данные</button>
+    
+</body>
+</html>
