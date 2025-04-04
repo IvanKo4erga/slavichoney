@@ -50,6 +50,7 @@ fetch('http://127.0.0.1:8000/products/', {
     })
     .catch(error => {
         console.error('Error', error);
+        alert(error);
         alert('Ошибка при получении продуктов');
     });
 //});
