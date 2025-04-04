@@ -1,4 +1,4 @@
-/*let tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 tg.expand();
 const user = tg.initDataUnsafe.user;
 
@@ -22,7 +22,7 @@ if (user) {
         .catch(error => console.error('Error saving user', error));
 
 }
-*/
+
 //document.getElementById('showProducts').addEventListener('click', function(){
 
 fetch('http://127.0.0.1:8000/products/', {
@@ -38,7 +38,10 @@ fetch('http://127.0.0.1:8000/products/', {
                 productHtml += product.price + ' ₽ <br>';
                 productHtml += 'Категория: ' + product.category + '<br>';
                 productHtml += product.description + '<br></p>';
+                
+                //productHtml += '<button onclick="" class="button btnL">-</button>' + userData
             });
+            productHtml += userData;
             document.getElementById('products').innerHTML = productHtml;
         }
         else {
