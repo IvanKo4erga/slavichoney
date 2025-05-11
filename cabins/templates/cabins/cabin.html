@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card mb-4 custom-shadow">
+        <div class="row">
+            <!-- Миниатюры -->
+            <div class="col-md-4">
+                <img src="{{ cabin.image.url }}"
+                    class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
+            </div>
+            <div class="col-md-4 ">
+                <p class="cabin_id mt-3">id: {{ cabin.display_id }}</p>
+            </div>
+            <!-- Увеличить изображение в модальном окне -->
+            <div class="modal fade" id="imageModal1" tabindex="-1"
+                aria-labelledby="imageModal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModal1Label">{{ cabin.name }}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{{ cabin.image.url }}"
+                                class="img-fluid" alt="Изображение 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Описание товара -->
+        <div class="card-body">
+            <p class="card-text">Цена: <strong>{{ cabin.sell_price }} ₽/день</strong></p>
+            <h5 class="card-title">{{ cabin.name }}</h5>
+            <p class="card-text">{{ cabin.description }}</p>
+            <p class="pL"> Звоните нам по телефону<br> 8-927-980-02-04<br> Или пишите на почту<br> I-michael@mail.ru</p>
+            {% comment %} <a href="{% url 'cart:cart_add' %}" class="button add-to-cart"
+            data-cabin-id="{{ cabin.id }}">
+            {% csrf_token %}
+            Добавить в корзину</a> {% endcomment %}
+        </div>
+    </div>
+</div>
+{% endblock  %}

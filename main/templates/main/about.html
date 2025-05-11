@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    {% comment %} <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}"> {% endcomment %}
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+
+<div class="row mt-1">
+    <p><H3 align="center">Славянский мёд</H3></p>
+</div>
+<div class="row mt-1">
+    <p><H4 align="center">Дело пчеловодов<br>предающееся из поколения в поколение</H4></p>
+</div>
+<div>
+    <br style = "line-height:5;">
+</div>
+    <div class="about">
+                <div class="product-card">
+                    <p>Наша пасека расположилась в тихом живописном уголке Ульяновской области - поселке Борисовка
+                    Чердаклинского района. Здесь есть все, чем очаровывает и славится природа Поволжья:
+                    разнотравье цветущих лугов, ягодные холмы, грибные леса и просторы полей.</p>
+                </div>
+
+                <div class="bady product-card">
+                    <p><img width="500" src="{% static 'deps/images/bg-images/2014 017.jpg' %}"></p>
+                </div>
+
+                <div class="bady product-card">
+                    <p><img width="500" src="{% static 'deps/images/bg-images/DSC_0963.JPG' %}"></p>
+                </div>
+                 <div class="bady product-card">
+                    <p>Пасека Лопатиных – семейное дело пчеловодов.
+                        Здесь объединяются труд пчел и забота людей,
+                        традиции и современные технологии. Хозяин
+                        пасеки - Михаил Лопатин - пчеловод с высшим
+                        в этой сфере образованием.</p>
+                </div>
+                <div class="bady product-card">
+                    <p>Летом со всей области на пасеку Лопатиных едут
+                    за вкусным качественным медом. Широкий
+                    ассортимент продуктов пчеловодства может
+                    оценить каждый, кто посетит нас. Это перга,
+                    пыльца, прополис, маточное молочко, сувенирные
+                    шкатулки.</p>
+                </div>
+                <div class="bady product-card">
+                    <p><img width="500" src="{% static 'deps/images/bg-images/honeycomb-with-tea-bread-table.jpg' %}"></p>
+                </div>
+                <div>
+                    <br style = "line-height:5;">
+                </div>
+
+            </div>
+{% endblock %}
+
+{% block footer %}
+<footer class="page-footer">
+   
+        <p class="m-0 text-center pS">Copyright &copy; Славянский мед 2025</p>
+        <ul>
+            <li><a class="pS" href="mailto:I-michael@mail.ru">I-michael@mail.ru</a></li>
+            <li><a class="pS" href="#">8-927-980-02-04</a></li>
+        </ul>
+   
+</footer>
+{% endblock %}
+
+

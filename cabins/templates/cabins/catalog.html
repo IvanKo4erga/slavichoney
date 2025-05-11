@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+{% load goods_tags %}
+
+{% block modal_cart %}
+{% endblock  %}
+
+
+{% block content %}
+<div class="row">
+    <!-- Форма фильтров -->
+    <div class="dropdown mb-2">
+        <button class="btn btn-secondary dropdown-toggle button" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Фильтры
+        </button>
+
+        <form action="{% url 'cabins-catalog:index' %}" method="get" class="dropdown-menu">
+            <div class="form-check text-white mx-3">
+                <input class="form-check-input" type="checkbox" name="on_sale" id="flexCheckDefault" value="on" {% if request.GET.on_sale == 'on' %}checked{% endif %}>
+                
+                <label class="form-check-label" for="flexCheckDefault">
+                    Товары по акции
+                </label>
+            </div>
+            <p class="text-white mx-3 mt-3">Сортировать:</p>
+            <div class="form-check text-white mx-3">
+                <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault1" value="default"
+                {% if not request.GET.order_by or request.GET.order_by == 'default' %}checked{% endif %}>
+                <label class="form-check-label" for="flexRadioDefault1">
+                    По умолчанию
+                </label>
+            </div>
+            <div class="form-check text-white mx-3">
+                <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault2" value="price" 
+                {% if request.GET.order_by == 'price' %}checked{% endif %}>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    От дешевых к дорогим
+                </label>
+            </div>
+            <div class="form-check text-white mx-3">
+                <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price"
+                {% if request.GET.order_by == '-price' %}checked{% endif %}>
+                <label class="form-check-label" for="flexRadioDefault3">
+                    От дорогих к дешевым
+                </label>
+            </div>
+            <button type="submit" class="button btn mx-3 mt-3">Применить</button>
+        </form>
+    </div>
+
+    {% for cabin in cabins %}
+        <!-- Карта товара -->
+        <div class="col-lg-4 col-md-6 p-4">
+            <div class="card brown-border-color rounded">
+                <a href="{% url 'cabins-catalog:cabin' cabin.slug %}">
+                {% if cabin.image %}
+                    <img src="{{ cabin.image.url }}" class="card-img-top" alt="{{ cabin.name }}">
+                {% else %}
+                    <img src="{% static 'deps/images/Not found image.png' %}" class="card-img-top" alt="Not found image">
+                {% endif %}
+                </a>
+                <div class="card-body">
+                    <a href="{% url 'cabins-catalog:cabin' cabin.slug %}">
+                        <p class="card-title pL">
+                            {% autoescape off %}
+                                {% if cabin.headline %}
+                                {{cabin.headline}}
+                                {% else %}
+                                {{ cabin.name }}
+                                {% endif %}
+                            {% endautoescape %}
+                        </p>
+                    </a>
+                    <p class="card-text pS">
+                        {% autoescape off %}
+                            {% if cabin.bodyline %}
+                            {{cabin.bodyline|truncatechars:100}}
+                            {% else %}
+                            {{ cabin.description|truncatechars:60 }}
+                            {% endif %}
+                        {% endautoescape %}
+                    </p>
+                    <p class="cabin_id">id: {{ cabin.display_id }}</p>
+                    <div class="d-flex flex-wrap justify-content-start m-2">
+
+                        {% if cabin.discount %}
+                            <p class="pS inline"><s>{{cabin.price}} ₽/день</s></p>
+                            <p class="pS inline"><strong>{{ cabin.sell_price }} ₽/день</strong></p>
+                            <span class="badge bg-warning pS">Скидка {{ cabin.discount }} %</span>
+                        {% else %}
+                            <p class="pS inline"><strong>{{ cabin.price }} ₽/день</strong></p>
+                        {% endif %}
+
+                    </div>
+                    {% comment %} <a href="{% url "cart:cart_add" %}" class="add-to-cart button btnS text-white"
+                    data-cabin-id="{{ cabin.id }}">
+                        {% csrf_token %}
+                        Добавить в корзину
+                    </a>
+                     {% endcomment %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+
+</div>
+<!-- Пагинация -->
+{% if cabins %}
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center my-4">
+            <div class="custom-shadow d-flex">
+
+                <li class="page-item {% if not page_obj.has_previous %}disabled{% endif %}">
+                <a class="page-link" href="{% if page_obj.has_previous %}?{% change_params page=page_obj.previous_page_number %}{% else %}#{% endif %}">Назад</a>
+                </li>
+
+                {% for page in page_obj.paginator.page_range %}
+                {% if page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}
+                    <li class="page-item {% if page_obj.number == page %} active {% endif %}">
+                        <a class="page-link" href="?{% change_params page=page %}">{{ page }}</a>
+                    </li>
+                {% endif %}
+                {% endfor %}
+
+
+                <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
+                    <a class="page-link" href="{% if page_obj.has_next %}?{% change_params page=page_obj.next_page_number %}{% else %}#{% endif %}">Следующая</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+{% endif %}
+{% endblock  %}
+
+
+{% block footer %}
+<footer class="page-footer">
+   
+        <p class="m-0 text-center pS">Copyright &copy; Славянский мед 2025</p>
+        <ul>
+            <li><a class="pS" href="mailto:I-michael@mail.ru">I-michael@mail.ru</a></li>
+            <li><a class="pS" href="#">8-927-980-02-04</a></li>
+        </ul>
+   
+</footer>
+{% endblock  %}
