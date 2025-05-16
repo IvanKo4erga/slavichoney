@@ -8,9 +8,7 @@ def catalog(request, category_slug=None):
     page = request.GET.get('page', 1)
     on_sale = request.GET.get('on_sale', None)
     order_by = request.GET.get('order_by', None)
-    query = request.GET.get('q', None)
 
-    
     cabins = Cabins.objects.all()
     if not cabins.exists():
         raise Http404()

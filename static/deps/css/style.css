@@ -338,12 +338,12 @@ h4 {
     padding: 20px;
 }
 
-.products {
+/* .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 30px;
-}
+} */
 
 /* .promotions {
     display: grid;
@@ -352,7 +352,7 @@ h4 {
     margin-bottom: 30px;
 } */
 
-.product-card {
+/* .product-card {
     background-color: white;
     border-radius: 5px;
     padding: 15px;
@@ -368,7 +368,7 @@ h4 {
 .product-card p {
     font-size: 18px;
     font-weight: bold;
-}
+} */
 
 /* .btn-green{
  --bs-btn-color:#fff;
@@ -484,7 +484,7 @@ h4 {
     background-color: #B87C05;
 }
 
-.form-check-input:checked {
+.form-check-input:checked .active>.page-link{
     background-color: #6B8E23;
     border-color: #6B8E23;
 }

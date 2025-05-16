@@ -62,7 +62,7 @@
                     <button type="submit" class="button btnS">Войти</button>
                 </form>
                 <div class="mt-3">
-                    {% comment %} <a href="#">Забыли пароль?</a> |{%endcomment%} <a href="{% url "user:registration" %}">Создать аккаунт</a>
+                     <a href="{% url "user:password_reset" %}">Забыли пароль?</a> | <a href="{% url "user:registration" %}">Создать аккаунт</a>
                 </div>
                 {% comment %} <hr>
                 <div class="text-center">

@@ -5,7 +5,7 @@ from cabins.models import Cabins
 
 
 @admin.register(Cabins)
-class ProductsAdmin(admin.ModelAdmin):
+class CabinsAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("name",)}
     list_display = ["name", "price", "discount"]
     list_editable = ["discount", ]

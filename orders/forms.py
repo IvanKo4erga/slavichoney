@@ -15,8 +15,8 @@ class CreateOrderForm(forms.Form):
     delivery_address = forms.CharField(required=False)
     payment_on_get = forms.ChoiceField(
         choices=[
-            ("0", 'False'),
-            ("1", 'True'),
+            ("0", "yookassa-payment"),
+            ("1", "payment-on-get"),
         ],
     )
 

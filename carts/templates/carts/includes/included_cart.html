@@ -11,7 +11,7 @@
                     <div class="col p-0">
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button type="button" class="btn button btn-sm decrement rounded" style=""
+                                <button type="button" class="btnS button decrement rounded" style=""
                                     data-cart-id="{{ cart.id }}"
                                     data-cart-change-url="{% url 'cart:cart_change' %}">
                                     {% csrf_token %}
@@ -20,7 +20,7 @@
                             <input type="text" class="form-control number" value="{{ cart.quantity }}"
                                 readonly>
                             <span class="input-group-btn">
-                                <button type="button" class="btn button btn-sm increment rounded"
+                                <button type="button" class="btnS button increment rounded"
                                     data-cart-id="{{ cart.id }}"
                                     data-cart-change-url="{% url 'cart:cart_change' %}">
                                     {% csrf_token %}

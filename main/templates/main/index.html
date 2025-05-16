@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block css %}
-<!--<link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">-->
-{% endblock %}
 
 {% block modal_cart %}
 {% include "includes/cart_button.html" %}
@@ -50,7 +47,7 @@
             {% endfor %}
 
         </div>
-{% comment %}
+    {% comment %}
         <div class="bady product-card">
             <h3>ПЧЕЛОПРОДУКЦИЯ</h3>
             <p><img src="{% static 'deps/images/base-goods-category/photo_6_2024-01-30_17-39-35 1-1.jpg' %}"</p>
@@ -61,7 +58,7 @@
             <p><img src="static/deps/images/base-goods-category/photo_6_2024-01-30_17-39-35 1-2.jpg"</p>
         </div>
     </div>
-{% endcomment %}
+    {% endcomment %}
     {% comment %} <div class="row mt-1">
         <h3 align="center">Переходите в наш каталог!</h3>
         <button class="btn btn-secondary btn-green" type="button" data-bs-toggle="dropdown"
@@ -83,7 +80,8 @@
         {% comment %} <div class="product-card">
             <h3>{{ product.name }}</h3>
             <p><img width="200" src={{ product.image.url }}></p>
-        </div> {% endcomment %}
+        </div> 
+        {% endcomment %}
         <div class="col-lg-4 col-md-6 p-4">
             <div class="card brown-border-color rounded">
                 <a href="{% url 'catalog:product' product.slug %}">
@@ -147,7 +145,8 @@
         <div class="bady product-card">
             <h3>Мед полевой</h3>
             <p><img width="200" src="static/deps/images/promoions/полевой.jpg"></p>
-        </div> {% endcomment %}
+        </div> 
+        {% endcomment %}
     </div>
     <div>
         <br style="line-height:5;">
