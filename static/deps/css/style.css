@@ -484,7 +484,22 @@ h4 {
     background-color: #B87C05;
 }
 
-.form-check-input:checked .active>.page-link{
+.form-check-input:checked {
+    background-color: #6B8E23;
+    border-color: #6B8E23;
+}
+
+.bg-color-main{
+    background-color: #6B8E23;
+    border-color: #6B8E23;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #6B8E23;
+    border-color: #6B8E23;
+}
+
+.active>.page-link{
     background-color: #6B8E23;
     border-color: #6B8E23;
 }

@@ -4,39 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="commit new files">
+      <change afterPath="$PROJECT_DIR$/orders/templates/admin/orders/order/change_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabins/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabins/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabins/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabins/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabins/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabins/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabins/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabins/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/goods/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/goods/products.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/templates/goods/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/goods/templates/goods/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/templates/goods/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/goods/templates/goods/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/goods/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/templates/orders/create_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders/templates/orders/create_order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/goods/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/deps/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/icons/trash3-fill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/icons/trash3-fill.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/js/jquery-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/js/jquery-ajax.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,10 +40,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KysR\Documents\univer\диплом\project\slavic-honey\orders\templates\admin\orders\order" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="slavic-honey" />
@@ -105,11 +98,29 @@
       <option name="project" value="LOCAL" />
       <updated>1746951153019</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1747413695345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747413695345</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit new files">
+      <option name="closed" value="true" />
+      <created>1747413740443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747413740443</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second commit" />
+    <MESSAGE value="commit new files" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit new files" />
   </component>
 </project>
