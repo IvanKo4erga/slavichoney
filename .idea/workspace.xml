@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="dashboard">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/templates/orders/create_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders/templates/orders/create_order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/android-chrome-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/android-chrome-512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/favicon-16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/deps/favicon/favicon_io.zip" beforeDir="false" afterPath="$PROJECT_DIR$/static/deps/favicon/favicon_io.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-    </list>
+    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="logo and vercel app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748791678021</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="logo and vercel app">
+      <option name="closed" value="true" />
+      <created>1749293665477</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749293665477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,6 +130,7 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="commit new files" />
     <MESSAGE value="dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard" />
+    <MESSAGE value="logo and vercel app" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo and vercel app" />
   </component>
 </project>
