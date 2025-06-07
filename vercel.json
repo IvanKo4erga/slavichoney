@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "slavic-honey/app/wsgi.py",
+        "src": "app/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb",
@@ -25,7 +25,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "slavic-honey/app/wsgi.py"
+        "dest": "app/wsgi.py"
       }
     ]
   }

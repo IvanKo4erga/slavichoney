@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="python310">
+    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="change build.sh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749306397730</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change build.sh">
+      <option name="closed" value="true" />
+      <created>1749314723720</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749314723720</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change build.sh">
+      <option name="closed" value="true" />
+      <created>1749314895763</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749314895763</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +215,7 @@
     <MESSAGE value="pip3 python3" />
     <MESSAGE value="edit build.sh" />
     <MESSAGE value="python310" />
-    <option name="LAST_COMMIT_MESSAGE" value="python310" />
+    <MESSAGE value="change build.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="change build.sh" />
   </component>
 </project>
