@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="change build.sh">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
-    </list>
+    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="vercel 5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749314895763</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="vercel 4">
+      <option name="closed" value="true" />
+      <created>1749315426654</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749315426654</updated>
+    </task>
+    <task id="LOCAL-00015" summary="vercel 5">
+      <option name="closed" value="true" />
+      <created>1749315634794</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749315634794</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +228,8 @@
     <MESSAGE value="edit build.sh" />
     <MESSAGE value="python310" />
     <MESSAGE value="change build.sh" />
-    <option name="LAST_COMMIT_MESSAGE" value="change build.sh" />
+    <MESSAGE value="vercel 4" />
+    <MESSAGE value="vercel 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="vercel 5" />
   </component>
 </project>
