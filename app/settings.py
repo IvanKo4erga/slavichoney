@@ -35,7 +35,7 @@ DEBUG = True
 CORS_ALLOW_HEADERS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
 
 # Application definition
 
