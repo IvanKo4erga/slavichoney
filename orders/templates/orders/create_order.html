@@ -76,16 +76,16 @@
                             {% endif %}
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label class="form-label">Способ оплаты: </label>
-                            <div class="form-check form-check-inline">
+                            {% comment %} <label class="form-label">Способ оплаты: </label> {% endcomment %}
+                            {% comment %} <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="payment_on_get"
-                                    id="id_payment_on_get" value="0" checked>
+                                    id="id_payment_on_get" value="0">
                                 <label class="form-check-label" for="id_payment_on_get">Оплата
                                     картой</label>
-                            </div>
-                            <div class="form-check form-check-inline">
+                            </div> {% endcomment %}
+                            <div class="form-check form-check-inline hidden">
                                 <input class="form-check-input" type="radio" name="payment_on_get"
-                                    id="id_payment_on_get" value="1">
+                                    id="id_payment_on_get" value="1" checked>
                                 <label class="form-check-label" for="id_payment_on_get">Наличными/картой
                                     при получении</label>
                                 {% if form.payment_on_get.errors %}
