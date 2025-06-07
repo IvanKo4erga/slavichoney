@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
 
     "debug_toolbar",
-    "corsheaders"
 
     'main',
     'goods',
@@ -59,6 +58,7 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'cabins',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
