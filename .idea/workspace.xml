@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="logo and vercel app" />
+    <list default="true" id="52c5f90b-f8d9-4b28-9fd6-edc0d0dd32a8" name="Changes" comment="vercel app 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749293665477</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="vercel app 2">
+      <option name="closed" value="true" />
+      <created>1749294051520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749294051520</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +143,7 @@
     <MESSAGE value="commit new files" />
     <MESSAGE value="dashboard" />
     <MESSAGE value="logo and vercel app" />
-    <option name="LAST_COMMIT_MESSAGE" value="logo and vercel app" />
+    <MESSAGE value="vercel app 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="vercel app 2" />
   </component>
 </project>
